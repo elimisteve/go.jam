@@ -21,3 +21,14 @@ func GetInts(howMany int) []int {
 	}
 	return nums
 }
+
+func GetPair() (pair [2]int) {
+	return [2]int{GetInt(), GetInt()}
+}
+
+func GetPairs(howMany int) (pairs [][2]int) {
+	for i := 0; i < howMany; i++ {
+		pairs = append(pairs, GetPair())
+	}
+	return
+}
